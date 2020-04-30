@@ -1,6 +1,7 @@
 # GitHub Flow完全に理解した。
 ## GitHub Flowとは
 まだわからん。けど、ブランチモデルという何かっぽい。ブランチ戦略とも呼ばれるのか？
+https://gist.github.com/Gab-km/3705015
 
 
 ## なぜGitHub Flowなのか
@@ -11,6 +12,8 @@
 ### GitHub Flow
 - 簡単らしい。
 - デプロイ（ユーザーアクセスなし？）が前提
+
+確かに https://www.atmarkit.co.jp/ait/articles/1708/01/news015.html を読む限り、統一的な扱いは、git-flowよりGitHub Flowが簡単に見える。
 
 
 ## GitHub Flowの思想
