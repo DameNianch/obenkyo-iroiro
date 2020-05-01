@@ -67,7 +67,7 @@ root 'controller_name#action_name'
 
 ## git色々
 もしかして、gitリポジトリの中でrails newするのはよくない？
-なんと無くだが、プロジェクト単位でrails newする気がしてきた。
+なんと無くだが、プロジェクト単位でrails newしてからそこをリポジトリとする気がしてきた。
 ```
 $ tree -aL 5
 .
@@ -94,7 +94,9 @@ $ tree -aL 5
 Herokuは、SQliteが使えないらしい。
 - プロダクション環境: PostgreSQL
 - テスト環境: SQlite
+
 という設定にGemfileを書き換える。（全部PostgreSQLにすればよくないか？という疑問）
+
 
 
 
