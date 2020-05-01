@@ -25,8 +25,7 @@
 ## 気を付けること
 - rubyのインデントはスペースx2 
 
-## Hello Worldの始め方
-### Railsの入手
+## Railsの入手
 rubyのインストール
 - https://railsgirls.jp/install
 - 適宜良い感じに
@@ -58,7 +57,7 @@ $ rails server
 ```
 を実行して、localhost:3000にブラウザからアクセス。（ここら辺の仕組みを理解していないけど、どうせこんな感じでイケるだろぐらいの感覚で進めているので調べておく。）
 
-### Hello Worldする
+## Hello Worldする
 ブラウザとコントローラーの間にルーターというものを入れる。このルーターは、ブラウザからのリクエストをコントローラーに振り分ける役割を果たす。これにより、デフォルトページの差し替えが可能となったりする。これを実際に行うのは、*config/routes.rb*である。
 このファイルの文法は
 ```
@@ -66,8 +65,36 @@ root 'controller_name#action_name'
 ```
 という書き方をする。*app/controllers/application_controller.rb*と*config/routes.rb*は以下のようなあああああ（完全にめんどくさくなった。あとでなんんとかする。）
 
-
-
+## git色々
+もしかして、gitリポジトリの中でrails newするのはよくない？
+なんと無くだが、プロジェクト単位でrails newする気がしてきた。
+```
+$ tree -aL 5
+.
+├── .git
+│   └── 略
+├── README.md
+├── github-flow
+│   └── PERFECT.md
+└── rails
+    └── tutorial-1
+        ├── PERFECT.md
+        └── environment
+            └── hello_app
+                ├── .git
+                ├── .gitignore
+                ├── Gemfile
+                ├── Gemfile.lock
+                略
+                └── vendor
+```
+## デプロイ
+デプロイサービスの違いを分かっていないので、調べておく
+### Heroku
+Herokuは、SQliteが使えないらしい。
+- プロダクション環境: PostgreSQL
+- テスト環境: SQlite
+という設定にGemfileを書き換える。（全部PostgreSQLにすればよくないか？という疑問）
 
 
 
