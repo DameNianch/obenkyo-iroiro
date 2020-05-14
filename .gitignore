@@ -1,2 +1,23 @@
-rails/tutorial/
-rails/sample_app/
+rails/*/tutorial/
+rails/*/sample_app/
+
+# Ignore bundler config.
+rails/*/sample_app/.bundle
+
+# Ignore the default SQLite database.
+rails/*/sample_app/db/*.sqlite3
+rails/*/sample_app/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+rails/*/sample_app/log/*
+rails/*/sample_app/tmp/*
+rails/*/sample_app/!/log/.keep
+rails/*/sample_app/!/tmp/.keep
+
+rails/*/sample_app/node_modules
+rails/*/sample_app/yarn-error.log
+
+rails/*/sample_app/.byebug_history
+
+# Ignore Spring files.
+rails/*/sample_app/spring/*.pid
