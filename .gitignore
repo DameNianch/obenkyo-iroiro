@@ -1,5 +1,5 @@
 rails/*/tutorial/
-rails/*/sample_app/
+rails/sample_app/
 
 # Ignore bundler config.
 rails/*/sample_app/.bundle
