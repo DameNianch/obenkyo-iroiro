@@ -1,0 +1,3 @@
+[submodule "rails/rails_sample"]
+	path = rails/rails_sample
+	url = git@github.com:kento-kobayashi/rails_sample.git
